@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>商品一覧</title>
+</head>
+<body>
+<h1>商品一覧</h1>
+<table  border="1">
+    <tr>
+        <th>id</th><th>名前</th><th>値段</th>
+    </tr>
+    <tr th:each="products : ${product}">
+        <td ><a th:href="@{http://localhost:8080/product/{id}(id=${products.id})}" >[[ ${products.id} ]]</a></td>
+        <td th:text="${products.name}"></td>
+        <td th:text="${products.price}"></td>
+    </tr>
+
+<!--    <a href="http://localhost:8080/product/{id}"></a>-->
+
+</table>
+</body>
+</html>

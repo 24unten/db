@@ -10,16 +10,7 @@ import org.springframework.stereotype.Repository;
 
 import java.sql.SQLException;
 import java.util.List;
-
-import com.example.lesson.Product.Product;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.DataClassRowMapper;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.stereotype.Repository;
+;
 
 @Repository // 追記
 public class ProductDao implements PgProductDao {
