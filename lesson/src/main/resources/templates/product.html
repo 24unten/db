@@ -11,5 +11,14 @@
 <p> 商品名:[[ ${products.name} ]]</p>
 <p> 値段:[[ ${products.price} ]]</p>
 
+
+<form th:action="'/product-delete/'+${products.id()}" method="post" >
+    <button type="submit">削除</button><br>
+
+</form>
+<button th:onclick="|location.href='/update/__${products.id()}__'|">修正</button>
+
+
+
 </body>
 </html>

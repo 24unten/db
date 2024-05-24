@@ -16,6 +16,10 @@
         <td th:text="${products.price}"></td>
     </tr>
 
+    <form name="addForm" th:action="@{/product-add}" method="get">
+        <button type="submit">商品追加</button><br>
+    </form>
+
 <!--    <a href="http://localhost:8080/product/{id}"></a>-->
 
 </table>
